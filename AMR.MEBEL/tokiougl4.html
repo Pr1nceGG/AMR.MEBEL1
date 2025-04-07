@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMR.MEBEL - Диван Лидер</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Базовые стили */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .product {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .back {
+            width: 30px;
+            height: 30px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .main {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        
+        .left {
+            margin-bottom: 30px;
+        }
+        
+        .left h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .left h2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .left h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .left img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+        
+        .right p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+        
+        .right a {
+            color: #333;
+            text-decoration: underline;
+        }
+        
+        .yellow {
+            color: #FFD700;
+        }
+        
+        .quantity {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 16px;
+            color: #333;
+            margin-top: 20px;
+        }
+        
+        .angle {
+            font-size: 20px;
+            cursor: pointer;
+            color: #666;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            margin-top: auto;
+        }
+        
+        .footer .left p {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .footer .right p {
+            background-color: #333;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        
+        .footer .right p:hover {
+            background-color: #555;
+        }
+        
+        .image-nav {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+        }
+        
+        .nav-dot.active {
+            background: #333;
+        }
+        
+        .specs {
+            margin-top: 20px;
+        }
+        
+        .specs p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .specs p strong {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        /* Планшеты (768px и больше) */
+        @media (min-width: 768px) {
+            .main {
+                flex-direction: row;
+                gap: 40px;
+                padding: 40px;
+            }
+            
+            .left {
+                flex: 1;
+                margin-bottom: 0;
+            }
+            
+            .right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .left img {
+                max-height: 500px;
+            }
+        }
+        
+        /* Десктопы (1024px и больше) */
+        @media (min-width: 1024px) {
+            .left h1 {
+                font-size: 40px;
+            }
+            
+            .left h2 {
+                font-size: 22px;
+            }
+            
+            .left h3 {
+                font-size: 28px;
+            }
+            
+            .right p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="header">
+            <a href="file:///C:/Users/a5ano/Desktop/AMR.MEBEL/index.html.html#products" class="back">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+        </div>
+        
+        <div class="main">
+            <div class="left">
+                <h1>Лидер</h1>
+                <h2>Прямой диван</h2>
+                <h3>Цена по запросу</h3>
+                
+                <div class="image-container">
+                    <img src="images1/lider1.png" alt="Диван Лидер - вид спереди" class="sofa-image active" id="image1">
+                    <img src="images1/lider2.png" alt="Диван Лидер - вид сбоку" class="sofa-image" id="image2" style="display: none;">
+                    <img src="images1/lider3.png" alt="Диван Лидер - спальное место" class="sofa-image" id="image3" style="display: none;">
+                    
+                    <div class="image-nav">
+                        <div class="nav-dot active" data-target="image1"></div>
+                        <div class="nav-dot" data-target="image2"></div>
+                        <div class="nav-dot" data-target="image3"></div>
+                    </div>
+                </div>
+                
+                <div class="specs">
+                    <p><strong>Габариты:</strong> 225x100 см</p>
+                    <p><strong>Спальное место:</strong> 200x190 см</p>
+                    <p><strong>Механизм:</strong> тик-так</p>
+                    <p><strong>Основание настила:</strong> брус</p>
+                    <p><strong>Наполнитель:</strong> +эластичный ППУ</p>
+                </div>
+            </div>
+            
+            <div class="right">
+                <p>Комфортная модель с изящными подлокотниками из натурального шпона. Создает неповторимый комфорт для владельца. Удобно сидеть, удобно спать и разбирать-собирать ежедневно.</p>
+                
+                <p>В наличии. <a href="#">Узнать условия доставки</a></p>
+                
+                <p>
+                    <span class="fa fa-star yellow"></span>
+                    <span class="fa fa-star yellow"></span>
+                    <span class="fa fa-star yellow"></span>
+                    <span class="fa fa-star yellow"></span>
+                    <span class="fa fa-star"></span>
+                    <span>(4.2 - 24 отзыва)</span>
+                </p>
+                
+                <p class="quantity">КОЛИЧЕСТВО <span class="fa fa-angle-left angle"></span><span id="qt">1</span><span class="fa fa-angle-right angle"></span></p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="left">
+                <p id="price">Цена по запросу</p>
+            </div>
+            <div class="right">
+                <p>Заказать</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Управление изображениями
+            const dots = document.querySelectorAll('.nav-dot');
+            const images = document.querySelectorAll('.sofa-image');
+            
+            dots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    dots.forEach(d => d.classList.remove('active'));
+                    images.forEach(img => img.style.display = 'none');
+                    
+                    this.classList.add('active');
+                    const targetId = this.getAttribute('data-target');
+                    document.getElementById(targetId).style.display = 'block';
+                });
+            });
+            
+            // Автопереключение изображений
+            let currentIndex = 0;
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % dots.length;
+                dots[currentIndex].click();
+            }, 3500);
+            
+            // Управление количеством
+            const qtElement = document.getElementById('qt');
+            const minusBtn = document.querySelector('.fa-angle-left');
+            const plusBtn = document.querySelector('.fa-angle-right');
+            
+            minusBtn.addEventListener('click', function() {
+                let qt = parseInt(qtElement.textContent);
+                if (qt > 1) {
+                    qtElement.textContent = qt - 1;
+                }
+            });
+            
+            plusBtn.addEventListener('click', function() {
+                let qt = parseInt(qtElement.textContent);
+                qtElement.textContent = qt + 1;
+            });
+            
+            // Кнопка "Заказать"
+            const orderBtn = document.querySelector('.footer .right p');
+            orderBtn.addEventListener('click', function() {
+                alert('Товар добавлен в корзину');
+            });
+        });
+    </script>
+</body>
+</html>
