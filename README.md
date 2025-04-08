@@ -1,1 +1,1 @@
-# AMR.MEBEL1
+# AMR.MEBEL
